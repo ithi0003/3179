@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first HTML document</title>
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bushfire Map</title>
+    <!-- Vega & Vega-Lite & Vega-Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  </head>
+  <body>
+    <h1>Bushfire Hotspots in Australia</h1>
+    <div id="vis"></div>
 
-<body>
-    <h2>Hyperlinks in HTML. </h2>
-    <h3>New heading added. </h3>
-    <p>This is the modified index.html file</p>
-</body>
+    <script type="text/javascript">
+      const spec = "https://raw.githubusercontent.com/ithi0003/3179/main/Week_9_Homework.json";
+      vegaEmbed('#vis', spec).then(function(result) {
+        // result.view is the Vega View
+      }).catch(console.error);
+    </script>
+  </body>
 </html>
