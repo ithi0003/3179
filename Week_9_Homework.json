@@ -69,7 +69,7 @@
           "scale": { "domain": [100, 1000, 2000], "range": ["#FFA500", "#FF4500", "#8B0000"] }
         },
         "tooltip": [
-          { "field": "acq_date", "type": "temporal", "title": "Date" },
+          { "field": "acq_date", "type": "nominal", "title": "Date" },
           { "field": "frpNum", "type": "quantitative", "title": "FRP (MW)" },
           { "field": "scanNum", "type": "quantitative", "title": "Scan Size" },
           { "field": "brightness", "type": "quantitative", "title": "Brightness" }
